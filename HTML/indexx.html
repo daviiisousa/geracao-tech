@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aula 2 html</title>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            table,
+            tr,
+            td,
+            th {
+                border: solid 1px;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            table {
+                width: 50%;
+                margin: auto;
+            }
+            textarea {
+                resize: none;
+            }
+        </style>
+    </head>
+    <body>
+        <head>
+            <h1>Aula 2 - html</h1>
+        </head>
+        <main>
+            <h2>lista não ordenada</h2>
+            <p>tag UL</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+            </ul>
+            <h2>lista ordernada</h2>
+            <p>tag OL</p>
+            <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+            </ol>
+            <hr />
+            <h2 style="text-align: center">Tabelas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Nome</th>
+                        <th>idade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>123</td>
+                        <td>Davi</td>
+                        <td>18</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+            <form>
+                <h2>formulario</h2>
+                <label for="Nome">Nome</label>
+                <input
+                    name="Nome"
+                    id="Nome"
+                    type="text"
+                    placeholder="Digite seu nome"
+                />
+                <label for="email">email</label>
+                <input
+                    name="email"
+                    id="email"
+                    type="email"
+                    placeholder="Digite seu email"
+                />
+            </form>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </main>
+    </body>
+</html>

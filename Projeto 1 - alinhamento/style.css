@@ -1,0 +1,207 @@
+:root {
+    --cor-principal: #8a1a9e;
+    --cor-destaque: #d000f0;
+    --cor-01: #f9f9f9;
+    --cor-02: #cfcfcf;
+    --cor-03: #8f8f8f;
+    --cor-04: #232323;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-04);
+    color: var(--cor-01);
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: black;
+}
+
+header > div > div > h1 {
+    text-shadow: 1px 5px 3px black;
+    text-align: center;
+}
+
+header > div > div > p {
+    text-align: center;
+}
+
+header > nav > ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.textoDestaque {
+    color: var(--cor-destaque);
+}
+
+.titulo {
+    font-size: 100px;
+    color: white;
+}
+
+nav {
+    background-color: var(--cor-destaque);
+    color: white;
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav > div > h1 {
+    font-size: 50px;
+}
+
+nav > div > i {
+    font-size: 50px;
+}
+
+li {
+    transition: 0.5s;
+}
+
+li:hover {
+    color: var(--cor-04);
+    transition: 0.5s;
+}
+
+.container {
+    padding: 30px 80px;
+}
+
+main > div > h1 {
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+
+.oqueFazemos {
+    padding: 20px 0px;
+}
+
+.oqueFazemos h2 {
+    margin-bottom: 15px;
+}
+
+.porqueContratar {
+    padding: 20px 0px;
+}
+
+.porqueContratar h2 {
+    margin-bottom: 15px;
+}
+
+.produtos {
+    background-color: var(--cor-principal);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.produtos > h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: var(--cor-04);
+    color: var(--cor-01);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.divFlex {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    height: 100%;
+}
+
+.fotoHead {
+    height: 50vh;
+    width: 100%;
+    background-image: url("./fotos/headimg.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.foto {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: rgb(24, 23, 23);
+    color: white;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: auto 50% auto;
+}
+
+footer div {
+    text-align: left;
+    padding: 10px;
+}
+
+footer div div {
+    border-radius: 10px;
+    min-height: 200px;
+}
+
+footer div h2 {
+    margin-bottom: 10px;
+}
+
+footer div ul li {
+    margin: 10px 0px;
+    list-style: none;
+}
+
+footer div ul li:hover {
+    background-color: #8a1a9e;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+.iconFooter {
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
