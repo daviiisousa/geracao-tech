@@ -1,3 +1,0 @@
-# BLOG DE NOTICIAS
-
-# SE ATUALIZE ddd
