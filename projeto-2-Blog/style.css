@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: #021526;
+    color: #6EACDA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6875rem 2.875rem;
+    width: 100%;
+}
+
+nav > h1{
+    font-size: 2rem;
+}
+
+nav > ul{
+    display: flex;
+    gap: 1.875rem;
+}
+
+nav > ul > li{
+    list-style: none;
+    font-weight: 700;
+}
+
+main{
+    padding: 3.125rem 2.625rem;
+}
+
+article{
+    background-color: #6EACDA;
+    padding: 2.0625rem 2rem;
+    border-radius: .625rem;
+    margin-bottom: 3.125rem;
+}
+
+article > div > div > h2{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #021526;
+}
+
+article > div > div > p{
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+article > div > div > button{
+    width: 100%;
+    border-radius: .75rem;
+    background-color: #021526;
+    font-weight: 600;
+    color: white;
+    padding: .375rem 0rem;
+    font-size: 1.5rem;
+    border: none;
+    margin-top: 1.75rem;
+}
+
+.divArticle{
+    display: flex;
+    gap: 32px;
+}
+
+.fotoArticle{
+    background-image: url(./img/articleFotos/marçal\ cadeirada.avif);
+    background-position: center;
+    background-size: cover;
+
+    width: 310px;
+    height: 292px;
+
+    border-radius: 10px;
+}
+
+.fotoArticle2{
+    background-image: url(./img/articleFotos/longlegs.jpg);
+    background-position: center ;
+    background-size: cover;
+
+    width: 310px;
+    height: 292px;
+
+    border-radius: 10px;
+}
+
+.fotoArticle3{
+    background-image: url(./img/articleFotos/headimg.jpg);
+    background-position: center ;
+    background-size: cover;
+
+    width: 310px;
+    height: 292px;
+
+    border-radius: 10px;
+}
+
+footer{
+    background-color: rgba(2, 21, 38, 0.85);
+    padding: 22px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer > h2 {
+    text-align: center;
+    color: white;
+}
