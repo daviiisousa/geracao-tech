@@ -77,6 +77,7 @@ button:hover{
     background-color: white;
     color: #021526;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .divArticle{
