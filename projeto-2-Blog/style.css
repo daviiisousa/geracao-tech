@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
+* {
     font-family: "Montserrat", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-nav{
+nav {
     background-color: #021526;
-    color: #6EACDA;
+    color: #6eacda;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,75 +17,75 @@ nav{
     width: 100%;
 }
 
-nav > h1{
+nav > h1 {
     font-size: 2rem;
 }
 
-nav > ul{
+nav > ul {
     display: flex;
     gap: 1.875rem;
 }
 
-nav > ul > li{
+nav > ul > li {
     list-style: none;
     font-weight: 700;
     transition: 0.5s;
     cursor: pointer;
 }
 
-nav > ul > li:hover{
+nav > ul > li:hover {
     color: white;
     transition: 0.5s;
 }
 
-main{
+main {
     padding: 3.125rem 2.625rem;
 }
 
-article{
-    background-color: #6EACDA;
+article {
+    background-color: #6eacda;
     padding: 2.0625rem 2rem;
-    border-radius: .625rem;
+    border-radius: 0.625rem;
     margin-bottom: 3.125rem;
 }
 
-article > div > div > h2{
+article > div > div > h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
     color: #021526;
 }
 
-article > div > div > p{
+article > div > div > p {
     font-weight: 600;
     font-size: 2rem;
 }
 
-article > div > div > button{
+article > div > div > button {
     width: 100%;
-    border-radius: .75rem;
+    border-radius: 0.75rem;
     background-color: #021526;
     font-weight: 600;
     color: white;
-    padding: .375rem 0rem;
+    padding: 0.375rem 0rem;
     font-size: 1.5rem;
     border: none;
     margin-top: 1.75rem;
     transition: 0.5s;
 }
 
-button:hover{
+button:hover {
     background-color: white;
     color: #021526;
     transition: 0.5s;
     cursor: pointer;
 }
 
-.divArticle{
+.divArticle {
     display: flex;
     gap: 32px;
 }
 
-.fotoArticle{
+.fotoArticle {
     background-image: url(./assets/articleFotos/marçal\ cadeirada.avif);
     background-position: center;
     background-size: cover;
@@ -96,9 +96,9 @@ button:hover{
     border-radius: 10px;
 }
 
-.fotoArticle2{
+.fotoArticle2 {
     background-image: url(./assets/articleFotos/longlegs.jpg);
-    background-position: center ;
+    background-position: center;
     background-size: cover;
 
     width: 310px;
@@ -107,9 +107,9 @@ button:hover{
     border-radius: 10px;
 }
 
-.fotoArticle3{
+.fotoArticle3 {
     background-image: url(./assets/articleFotos/headimg.jpg);
-    background-position: center ;
+    background-position: center;
     background-size: cover;
 
     width: 310px;
@@ -118,7 +118,7 @@ button:hover{
     border-radius: 10px;
 }
 
-footer{
+footer {
     background-color: rgba(2, 21, 38, 0.85);
     padding: 22px 0px;
     position: fixed;
