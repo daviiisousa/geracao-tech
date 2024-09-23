@@ -141,13 +141,17 @@ footer > h2 {
         padding: 2.115rem 1.625rem;
     }
 
+    nav > h1 {
+        font-size: 2rem;
+    }
+
     nav > ul {
         display: none;
     }
 
     nav > div {
         display: block;
-        font-size: 1.50rem;
+        font-size: 2rem;
     }
 
     article > div{
