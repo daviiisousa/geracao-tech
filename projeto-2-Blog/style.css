@@ -17,6 +17,10 @@ nav {
     width: 100%;
 }
 
+nav > div {
+    display: none;
+}
+
 nav > h1 {
     font-size: 2rem;
 }
@@ -129,4 +133,61 @@ footer {
 footer > h2 {
     text-align: center;
     color: white;
+}
+
+@media (max-width: 1116px)  {
+
+    main {
+        padding: 2.115rem 1.625rem;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+    nav > div {
+        display: block;
+        font-size: 1.50rem;
+    }
+
+    article > div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article > .divArticle > div > img{
+        width: 100%;
+    }
+
+    .fotoArticle2 {
+        background-image: url(./assets/articleFotos/longlegs.jpg);
+        background-position: top center;
+        background-size: cover;
+    
+        width: 310px;
+        height: 292px;
+    
+        border-radius: 10px;
+    }
+
+    article > div > div > h2 {
+        margin-bottom: 1rem;
+        font-size: 1.875rem;
+        color: #021526;
+    }
+    
+    article > div > div > p{
+        width: 100%;
+        font-size: 1.25rem;
+    }
+
+    footer{
+        padding: 15px 0px;
+    }
+
+    footer > h2 {
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+    }
 }
