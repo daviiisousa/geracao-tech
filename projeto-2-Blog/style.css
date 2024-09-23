@@ -29,6 +29,13 @@ nav > ul{
 nav > ul > li{
     list-style: none;
     font-weight: 700;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+nav > ul > li:hover{
+    color: white;
+    transition: 0.5s;
 }
 
 main{
@@ -63,6 +70,13 @@ article > div > div > button{
     font-size: 1.5rem;
     border: none;
     margin-top: 1.75rem;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color: white;
+    color: #021526;
+    transition: 0.5s;
 }
 
 .divArticle{
@@ -71,7 +85,7 @@ article > div > div > button{
 }
 
 .fotoArticle{
-    background-image: url(./img/articleFotos/marçal\ cadeirada.avif);
+    background-image: url(./assets/articleFotos/marçal\ cadeirada.avif);
     background-position: center;
     background-size: cover;
 
@@ -82,7 +96,7 @@ article > div > div > button{
 }
 
 .fotoArticle2{
-    background-image: url(./img/articleFotos/longlegs.jpg);
+    background-image: url(./assets/articleFotos/longlegs.jpg);
     background-position: center ;
     background-size: cover;
 
@@ -93,7 +107,7 @@ article > div > div > button{
 }
 
 .fotoArticle3{
-    background-image: url(./img/articleFotos/headimg.jpg);
+    background-image: url(./assets/articleFotos/headimg.jpg);
     background-position: center ;
     background-size: cover;
 
