@@ -141,6 +141,37 @@ footer > h2 {
         padding: 2.115rem 1.625rem;
     }
 
+    #menu-toggle{
+        display: none;
+    }
+
+    .menu-button{
+        cursor: pointer;
+    }
+
+    .menu-content{
+        display: none;
+        position: relative;
+        top: 0px;
+        right: 0;
+        
+        background-color: #021526;
+    }
+
+    .menu-content a{
+        display: block;
+        text-decoration: none;
+        color: #6eacda;
+    }
+
+    .menu-content ul {
+        list-style: none;
+    }
+
+    #menu-toggle:checked + .menu-button + .menu-content{
+        display: block;
+    }
+
     nav > h1 {
         font-size: 2rem;
     }
