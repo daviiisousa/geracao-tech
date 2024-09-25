@@ -244,7 +244,7 @@ footer > h2 {
     }
 }
 
-@media (max-width: 36rem)  {
+@media (max-width: 50rem)  {
 
     main {
         padding: 2.115rem 1.625rem;
