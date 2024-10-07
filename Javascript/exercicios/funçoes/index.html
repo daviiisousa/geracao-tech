@@ -3,19 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>funçoes em javascript</title>
   </head>
   <body>
-    <h2>aprendendo funçoes em javascript</h2>
+    <h2 class="titulo">
+      aprendendo funçoes em <span class="destaque">javascript</span>
+    </h2>
 
-    <form id="formCalcular">
-        <h3>funçao nomeada</h3>
-        <label for="valor1">Valor 1</label>
-        <input type="number" id="valor1" required />
-        <br /><br />
-        <label for="valor1">Valor 2</label>
-        <input type="number" id="valor2" required />
-        <br><br>
+    <div class="container">
+      <form class="form" id="formCalcular">
+        <h3>Calculadora</h3>
+        <div class="container-input">
+          <div>
+            <label for="valor1">Valor 1</label>
+            <input type="number" id="valor1" required />
+          </div>
+
+          <div>
+            <label for="valor2">Valor 2</label>
+            <input type="number" id="valor2" required />
+          </div>
+        </div>
+
         <label for="operacao">Operação</label>
         <select name="" id="operacao" required>
           <option value="1">Adiçao</option>
@@ -23,9 +33,12 @@
           <option value="3">Divisao</option>
           <option value="4">Multiplicaçao</option>
         </select>
-        <br /><br />
+
         <button type="submit" id="botaoCalcular">Calcular</button>
-    </form>
+        <div class="resposta" id="res"></div>
+      </form>
+    </div>
+   
   </body>
   <script src="./app.js"></script>
 </html>
