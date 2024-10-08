@@ -15,15 +15,11 @@ const empresaValor = empresas.filter((empresa) => {
     }
 })
 
-// const ValorDaEmpresa = empresas.reduce((acc, atual) => {
-//     return acc + atual.valorDeMercado
-// }, 0)
+const ValorDaEmpresa = empresas.reduce((acc, atual) => {
+    return acc + atual.valorDeMercado
+}, 0)
 
-// console.log(ValorDaEmpresa);
-
-// const empresaMaisAntiga = empresas.reduce((maisAntiga, empresa) => {
-//     return (empresa)
-// }, empresas[0])
+console.log(ValorDaEmpresa);
 
 const nomeECeo = empresas.map((empresa) =>{
     console.log(`O CEO ${empresa.CEO} e dono da ${empresa.nome}`)
