@@ -40,7 +40,7 @@ input{
     border-radius: 5px;
 }
 
-button{
+form > button{
     width: 100%;
     margin: 10px 0px;
     padding: 5px 0px;
@@ -65,11 +65,17 @@ button:hover{
     margin: 10px 0px;
     padding: 10px;
     border-radius: 10px;
+    justify-content: space-between;
 }
 
-.resposta > div{
-    margin-bottom: 10px;
+.apagar{
+    background-color: #181717;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
 }
+
 
 .resposta > div > div{
     display: flex;
