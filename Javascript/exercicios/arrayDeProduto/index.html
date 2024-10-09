@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Array de produtos</h1>
     <form id="form">
-        <label for="produtos">Produtos</label>
-        <input type="text" id="produtos">
-        <br><br>
-        <label for="preco">Preço</label>
-        <input type="number" id="preco">
-        <br><br>
-        <label for="qtd">Quantidade</label>
-        <input type="number" id="qtd">
+        <div>
+            <label for="produtos">Produtos</label>
+            <input type="text" id="produtos" required>
+            <label for="preco">Preço</label>
+            <input type="number" id="preco" required >
+            <label for="qtd">Quantidade</label>
+            <input type="number" id="qtd" required>
+        </div>
 
         <button>enviar</button>
     </form>
     <div id="resposta">
-
+        
     </div>
 </body>
 <script src="./app.js"></script>
