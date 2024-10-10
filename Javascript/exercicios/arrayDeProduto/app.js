@@ -1,10 +1,12 @@
-const produtos = [];
+const ProdutoArray = JSON.parse(localStorage.getItem('produto')) || []
 
 const form = document.getElementById("form");
 const resposta = document.getElementById("resposta");
 const inputProduto = document.getElementById("produtos");
 const inputPreco = document.getElementById("preco");
 const inputQuantidade = document.getElementById("qtd");
+
+renderizarProdutos()
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -21,8 +23,6 @@ form.addEventListener("submit", (e) => {
   addNovoProduto(nome, preco, qtd);
   renderizarProdutos();
 
-  console.log(produtos);
-
   inputProduto.value = "";
   inputPreco.value = "";
   inputQuantidade.value = "";
@@ -35,13 +35,18 @@ function addNovoProduto(nome, preco, qtd) {
     quantidade: qtd,
   };
 
-  produtos.push(produto);
+  ProdutoArray.push(produto);
+
+  localStorage.setItem('produto', JSON.stringify(ProdutoArray))
+
 }
 
 function apagar(index) {
   // Remove o produto do array usando o índice
-  produtos.splice(index, 1);
+  ProdutoArray.splice(index, 1);
   renderizarProdutos(); // Atualiza a exibição
+  localStorage.setItem('produto', JSON.stringify(ProdutoArray));
+
 }
 
 function atualizar(index) {
@@ -55,19 +60,21 @@ function atualizar(index) {
   }
 
   // Atualizar o produto existente com a nova quantidade
-  produtos[index].quantidade = valorNovo;
+  ProdutoArray[index].quantidade = valorNovo;
 
   // Re-renderizar a lista de produtos
   renderizarProdutos();
+  localStorage.setItem('produto', JSON.stringify(ProdutoArray));
+
 }
 
 
 function renderizarProdutos() {
   // Limpa a exibição anterior
-  resposta.innerHTML = "";
+  resposta.innerHTML = ''
 
   // Itera sobre os produtos para renderizá-los
-  produtos.forEach((produto, index) => {
+  ProdutoArray.forEach((produto, index) => {
     resposta.innerHTML += `
       <div>
         <div class="resposta">
