@@ -92,14 +92,13 @@ button:hover{
     }
 }
 
-@media (max-width: 625px){
+@media (max-width: 700px){
     .resposta{
         background-color: white;
         color: #181717;
         display: flex;
         flex-direction: column;
         margin: .625rem 0rem;
-        padding: .625rem;
         border-radius: .625rem;
         justify-content: space-between;
         align-items: center;
@@ -107,6 +106,11 @@ button:hover{
     .resposta > div > div{
         background-color: white;
         color: #181717;
-        padding: .625rem;
+
+    }
+    body{
+        padding: 50px 80px;
+        margin: auto;
+        height: 100vh;
     }
 }
