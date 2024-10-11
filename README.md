@@ -4,5 +4,5 @@
   <a href="https://daviiisousa.github.io/geracao-tech/Projeto%201%20-%20alinhamento/" target="_blank">tarefa 1</a>
   <a href="https://daviiisousa.github.io/geracao-tech/projeto-2-Blog/" target="_blank">tarefa 2</a>
   <a href="https://daviiisousa.github.io/geracao-tech/Javascript/exercicios/calculadora/">calculadora</a>
-  <a href="https://daviiisousa.github.io/geracao-tech/Javascript/exercicios/arrayDeProduto/" ></a>
+  <a href="https://daviiisousa.github.io/geracao-tech/Javascript/exercicios/arrayDeProduto/" >Array de produtos</a>
 </div>
