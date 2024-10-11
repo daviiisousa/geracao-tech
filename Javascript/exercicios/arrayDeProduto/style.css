@@ -106,10 +106,12 @@ button:hover{
     .resposta > div > div{
         background-color: white;
         color: #181717;
-
+    }
+    input{
+        margin-bottom: 12px;
     }
     body{
-        padding: 50px 80px;
+        padding: 50px 50px;
         margin: auto;
         height: 100vh;
     }
