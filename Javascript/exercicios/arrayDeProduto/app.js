@@ -39,34 +39,27 @@ function addNovoProduto(nome, preco, qtd) {
 }
 
 function apagar(index) {
-  // Remove o produto do array usando o índice
   produtos.splice(index, 1);
-  renderizarProdutos(); // Atualiza a exibição
+  renderizarProdutos();
 }
 
 function atualizar(index) {
-  // Pedir o novo valor da quantidade ao usuário
   const valorNovo = Number(prompt('Digite uma nova quantidade'));
 
-  // Verifica se o valor inserido é válido
   if (isNaN(valorNovo) || valorNovo <= 0) {
     alert("Por favor, insira uma quantidade válida.");
     return;
   }
 
-  // Atualizar o produto existente com a nova quantidade
   produtos[index].quantidade = valorNovo;
 
-  // Re-renderizar a lista de produtos
   renderizarProdutos();
 }
 
 
 function renderizarProdutos() {
-  // Limpa a exibição anterior
   resposta.innerHTML = "";
 
-  // Itera sobre os produtos para renderizá-los
   produtos.forEach((produto, index) => {
     resposta.innerHTML += `
       <div>
