@@ -1,8 +1,7 @@
 export function Main({children}){
     return(
         <>
-            <main className="h-screen bg-white text-white px-32 py-4">
-                <h3 className="text-xl">Aprendendo Components</h3>
+            <main className="h-screen bg-white text-white ">
                 {children}
             </main>
         </>
