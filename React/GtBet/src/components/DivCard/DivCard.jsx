@@ -6,6 +6,7 @@ export const DivCard = ({titulo, descricao}) => {
             <div className='Card'>
                     <h1>{titulo}</h1>
                     <p>{descricao}</p>
+                    <hr />
                     <div className='divBtnCard'><button className='btnCard'>Apostar</button></div>
             </div>
         </>

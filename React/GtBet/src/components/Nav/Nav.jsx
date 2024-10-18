@@ -24,9 +24,12 @@ export const Nav = () => {
           </li>
         </ul>
       </nav>
+        <h1 className="tituloBackground">Cadastre-se e ganhe 50 reais</h1>
       <div className="imgBackground">
-        <h1 className="tituloBackground">Comece com 10 reais</h1>
-
+        <div className="divBtnBackground">
+            <button>Abra sua conta</button>
+            <button>Cliente existente</button>
+        </div>
       </div>
     </>
   );

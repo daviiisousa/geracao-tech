@@ -4,6 +4,17 @@
     gap: 20px;
 }
 
+.divSection{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.divSection > h1{
+    padding-bottom: 20px;
+    font-size: 50px;
+}
 
 
 
