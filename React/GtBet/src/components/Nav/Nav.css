@@ -1,0 +1,50 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #024CAA;
+    align-items:center ;
+}
+
+nav div{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+nav div h1 {
+    font-size: 40px;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+.imgBackground{
+    width: 100%;
+    height: 85vh;
+    background-image: url(../../assets/Background/geraçaoTeh.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.tituloBackground{
+    background-color: #091057;
+    color: white;
+    text-align: center;
+}
+
+ul{
+    display: flex;
+    gap: 10px;
+}
+
+li{
+    list-style: none;
+}
+
+.linkNav{
+    text-decoration: none;
+    color: black;
+}
