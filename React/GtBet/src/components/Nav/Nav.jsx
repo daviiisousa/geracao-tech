@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import GTIcon from "../../assets/aposta.png";
 import imgBackgroud from '../../assets/Background/geraçaoTeh.jpg'
 import "./Nav.css";
+import { BtnCadastro } from "../Butoes/BtnCadastro/BtnCadastro";
+import { BtnEntrar } from "../Butoes/btnEntrar/btnEntrar";
 
 export const Nav = () => {
   return (
@@ -24,11 +26,11 @@ export const Nav = () => {
           </li>
         </ul>
       </nav>
-        <h1 className="tituloBackground">Cadastre-se e ganhe 50 reais</h1>
+        <marquee behavior="scroll" direction="left" className="tituloBackground">Cadastre-se e ganhe 50 reais </marquee >
       <div className="imgBackground">
         <div className="divBtnBackground">
-            <button>Abra sua conta</button>
-            <button>Cliente existente</button>
+            <BtnCadastro btnCadastro={"Cadastre-se"} />
+            <BtnEntrar btnEntrar={'Cliente existente'} />
         </div>
       </div>
     </>

@@ -1,11 +1,9 @@
 import './BtnCadastro.css'
 
-export const BtnCadastro = () => {
+export const BtnCadastro = ({btnCadastro}) => {
   return (
     <>
-      <div className="divBtnCard">
-        <button className="btnCard">Apostar</button>
-      </div>
+        <button className="btnCard">{btnCadastro}</button>
     </>
   );
 };

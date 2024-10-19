@@ -1,0 +1,8 @@
+.btnEntar {
+    border: 2px solid #EC8305;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: #ec840500;
+    cursor: pointer;
+}
