@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import GTIcon from "../../assets/aposta.png";
-import imgBackgroud from '../../assets/Background/geraçaoTeh.jpg'
 import "./Nav.css";
 import { BtnCadastro } from "../Butoes/BtnCadastro/BtnCadastro";
 import { BtnEntrar } from "../Butoes/btnEntrar/btnEntrar";
@@ -10,10 +9,11 @@ export const Nav = () => {
     <>
       <nav>
         <div>
-          <h1>GTBet</h1>
+          <h1><span>GT</span>Bet</h1>
           <img className="icon" src={GTIcon} alt="" />
         </div>
         <ul>
+          <input placeholder="Pesquisar 🔎" className="inputNav" type="text" />
           <li>
             <Link className="linkNav" to={"/"}>
               Home

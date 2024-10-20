@@ -1,14 +1,15 @@
-.btnCard{
+.btnCadastro{
     background-color: #0026ff;
     color: white;
     border-radius: 10px;
     border: none;
-    padding: 10px 50px;
+    padding: 10px 80px;
     transition: 0.5s;
     cursor: pointer;
+    font-size: 20px;
 }
 
-.btnCard:hover{
+.btnCadastro:hover{
     transition: 0.5s;
     background-color: #EC8305;
 }

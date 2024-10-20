@@ -2,7 +2,6 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    /* background-color: #024CAA; */
     background-image: linear-gradient(to left, #024CAA, #ffae00, #EC8305);
     align-items:center ;
 }
@@ -40,9 +39,14 @@ nav div h1 {
     padding: 10px;
 }
 
+span{
+    color: #024CAA;
+}
+
 ul{
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    align-items: center;
 }
 
 li{
@@ -50,7 +54,7 @@ li{
 }
 
 .linkNav{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     text-decoration: none;
     color: black;
@@ -68,4 +72,11 @@ li{
     flex-direction: column;
     gap: 20px;
     justify-content: end;
+}
+
+.inputNav{
+    width: 500px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
 }
