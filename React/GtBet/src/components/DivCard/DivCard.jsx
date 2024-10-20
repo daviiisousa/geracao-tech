@@ -8,7 +8,7 @@ export const DivCard = ({titulo, descricao}) => {
             <div className='Card'>
                 <img className='imgCard' src={cardFoto1} alt="" />
                     <h1>{titulo}</h1>
-                    <p>{descricao}</p>
+                    {/* <p>{descricao}</p> */}
                     <BtnCard btnCard={'Apostar'} />
             </div>
         </>
