@@ -1,5 +1,6 @@
 .sectionContato{
     background-color: #EC8305;
+    padding: 10px 0px;
 }
 
 .ContainerContato{
@@ -50,4 +51,9 @@
 
 .tituloContato{
     text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }

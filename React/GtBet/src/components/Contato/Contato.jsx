@@ -12,19 +12,20 @@ export const Contato = () => {
               <h1 className="tituloContato">Nossas redes</h1>
               <ul className="ListaContato">
                 <li className="itemListaContato">
-                  <box-icon type="logo"   name="instagram"></box-icon>Instagram
+                  <box-icon type="logo"   name="instagram"></box-icon>
+                  <a target="_blanck" href="https://www.instagram.com/daviiisousa18/">Instagram</a>
                 </li>
                 <li className="itemListaContato">
                   <box-icon type="logo"  name="facebook-square"></box-icon>
-                  Facebook
+                  <a target="_blanck" href="https://www.facebook.com/profile.php?id=100031301692757">Facebook</a>
                 </li>
                 <li className="itemListaContato">
                   <box-icon name="whatsapp-square"  type="logo"></box-icon>
-                  Whatsaap
+                  <a target="_blanck" href="#">Whatsaap</a>
                 </li>
                 <li className="itemListaContato">
                   <box-icon type='logo' name='linkedin-square'></box-icon>
-                  Linkedin
+                  <a target="_blanck" href="https://www.linkedin.com/in/davi-sousa-alves/" >Linkedin</a>
                 </li>
               </ul>
             </div>
@@ -38,11 +39,11 @@ export const Contato = () => {
                   <input type="text" id="nome" />
                 </div>
                 <div className="divFormContato">
-                  <label htmlFor="email">E-mail</label>
+                  <label htmlFor="email">E-mail:</label>
                   <input type="email" id="email" />
                 </div>
                 <div className="divFormContato">
-                  <label htmlFor="cpf">Cpf</label>
+                  <label htmlFor="cpf">Cpf:</label>
                   <input type="number" id="cpf" />
                 </div>
                 <BtnCard btnCard={'Enviar'} />
