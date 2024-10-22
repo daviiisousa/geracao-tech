@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { Link } from "react-router-dom";
+import './Home.css'
 
 export const Home = () => {
     const [products, setProduct] = useState([])
@@ -8,13 +9,13 @@ export const Home = () => {
     useEffect(() => {
         async function loadProducts() {
             const response = await api.get('products/')
-            setProduct(response.data.products)
+            setProduct(response.data.products.slice(0, 15))
         }
         loadProducts()
     }, [])
 
     return ( 
-            <div className="container">
+            <div className="lista-products ">
                 {products.map((product) => {
                     return(
                         <div key={product.id} className="product">
