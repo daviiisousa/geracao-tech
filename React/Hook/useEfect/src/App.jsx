@@ -1,21 +1,15 @@
 import { useEffect, useState } from "react";
 
 function App() {
-  const [tarefas, setTarefas] = useState([
-    "estudar React",
-    "estudar javascript",
-  ]);
+  // Inicializa o estado com as tarefas do localStorage, se existirem, ou com um array vazio
+  const [tarefas, setTarefas] = useState(() => {
+    const tarefaslocalStorage = localStorage.getItem("@tarefas");
+    return tarefaslocalStorage ? JSON.parse(tarefaslocalStorage) : [];
+  });
 
   const [input, setInput] = useState("");
 
-  useEffect(() => {
-    const tarefaslocalStorage = localStorage.getItem("@tarefas")
-    
-    if (tarefaslocalStorage) {
-     setTarefas(JSON.parse(tarefaslocalStorage))
-    }
-  }, []);
-  
+  // Salva as tarefas no localStorage sempre que o estado `tarefas` for atualizado
   useEffect(() => {
     localStorage.setItem("@tarefas", JSON.stringify(tarefas));
   }, [tarefas]);
@@ -23,14 +17,19 @@ function App() {
   function handleSubmit(e) {
     e.preventDefault();
 
+    if (input.trim() === "") {
+      return; // Evita adicionar tarefas vazias
+    }
+
     setTarefas([...tarefas, input]);
+    setInput(""); // Limpa o campo de entrada após a tarefa ser adicionada
   }
 
   return (
     <>
       <div>
         <h1>Tarefas</h1>
-        <form action="#" onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
           <label htmlFor="Tarefas">Tarefas:</label>
           <br />
           <input
@@ -44,10 +43,8 @@ function App() {
         </form>
       </div>
       <ul>
-        {tarefas.map((tarefa) => (
-          <li key={tarefa}>
-            {tarefa} 
-          </li>
+        {tarefas.map((tarefa, index) => (
+          <li key={index}>{tarefa}</li>
         ))}
       </ul>
     </>
