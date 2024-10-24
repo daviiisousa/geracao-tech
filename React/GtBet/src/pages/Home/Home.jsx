@@ -22,7 +22,9 @@ export const Home = () => {
                         <Sobre />
                     </Container>
                 </main>
-                    <Footer />
+                    <footer>
+                        <Footer />
+                    </footer>
             </body>
         </>
     )
