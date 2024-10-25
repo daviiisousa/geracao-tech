@@ -4,7 +4,7 @@
   "main": "fs.js",
   "type": "module",
   "scripts": {
-    "dev": "node fs.js",
+    "dev": "node exercicio.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

@@ -1,8 +1,8 @@
 import fs from 'fs'
 
-const nomeDoArquivo = `${path}exemplo.txt`
 const enconding = 'utf8'
 let path = '/'
+const nomeDoArquivo = `${path}exemplo.txt`
 
 function criarArquivo(){
     const content = 'escrevendo em um arquivo com Node.js';
@@ -31,7 +31,7 @@ function addConteudo(){
 
     const novoTexto = "\n conteudo adicional"
 
-    fs.appendFile(nomeDoArquivo, novoTexto, (erro) => {
+    fs.appendFileSync(nomeDoArquivo, novoTexto, (erro) => {
         if(erro){
             console.error('error ao add o conteudo: ', erro);
             return
@@ -67,7 +67,7 @@ function cricarDiretorio(){
 
         console.log('diretorio criado')
     })
-    path = `/${novaPasta}/`
+    path = `${novaPasta}/`
     criarArquivo()
     lerArquivo()
 
@@ -77,7 +77,7 @@ function cricarDiretorio(){
 // funçoes //
 
 // criarArquivo()
-// lerArquivo()
-// addConteudo()
 // excluirArquivo()
 cricarDiretorio()
+// addConteudo()
+// lerArquivo()
