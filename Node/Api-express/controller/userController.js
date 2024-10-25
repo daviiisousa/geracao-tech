@@ -11,10 +11,8 @@ let users = [
   },
 ];
 
-const getAllUsers = (_req, res) => {
+export const getAllUsers = (_req, res) => {
   res.json(users);
 };
 
-module.exports = {
-    getAllUsers
-}
+

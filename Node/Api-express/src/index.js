@@ -1,13 +1,13 @@
 import express from "express";
 import os from 'os'
-import userRoutes from '../routes/users'
+import {router} from '../routes/users.js'
 const port = 3000;
 
 const app = express();
 
 app.use(express.json());
 
-app.use('/users', userRoutes)
+app.use('/users', router)
 
 app.listen(port, () => {
   console.log(`api esta rodando em ${port}`);
