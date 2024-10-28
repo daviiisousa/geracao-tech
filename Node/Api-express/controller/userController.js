@@ -15,4 +15,34 @@ export const getAllUsers = (_req, res) => {
   res.json(users);
 };
 
+export const getUserById = (req, res) => {
+  const userId = parseInt(req.params.id)
+  
+  const user = users.find((u) => {
+    return u.id == userId
+  })
+  
+  if(!user){
+    const error = new Error('usuario não cadastrado')
+    error.statusCode = 404
+    res.send("Usuário não encontrado")
+  }
+  res.json(user)
+}
+
+export const createUser = (req, res) => {
+  const {nome, email} = req.body
+  if(!nome || !email){
+    return res
+    .status(400)
+    .json({error: 'Nome e email sao obrigatorios'})
+  }
+  const newUser = {
+    id: users.length + 1,
+    nome,
+    email
+  }
+  users.push(newUser)
+  res.status(201).json(newUser)
+}
 
