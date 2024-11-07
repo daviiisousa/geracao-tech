@@ -1,0 +1,28 @@
+.sectionHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #00712D;
+}
+
+.divHeader{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tituloHeader{
+    color: #ffffff;
+}
+
+.lojinhaIconHeader{
+    height: auto;
+    width: 50%;
+}
+
+.ulHeader{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
