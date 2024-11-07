@@ -6,3 +6,10 @@
   box-sizing: border-box;
   font-family: "Inter", serif;
 }
+
+:root{
+  --cor-primaria: #00712D;
+  --cor-secundaria: #D5ED9F;
+  --cor-leve: #FFFBE6;
+  --cor-destaque: #FF9100;
+}
