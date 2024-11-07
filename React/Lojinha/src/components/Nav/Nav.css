@@ -1,0 +1,19 @@
+
+.ulNav{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.linkNav{
+    text-decoration: none;
+    color: var(--cor-leve);
+    font-size: 19px;
+    transition: 0.5s;
+}
+
+.linkNav:hover{
+    color: var(--cor-destaque);
+    transition: 0.5s;
+    transform: scale(1.1);
+}

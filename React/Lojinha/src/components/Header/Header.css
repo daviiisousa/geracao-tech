@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #00712D;
+    background-color: var(--cor-primaria);
 }
 
 .divHeader{
@@ -19,10 +19,4 @@
 .lojinhaIconHeader{
     height: auto;
     width: 50%;
-}
-
-.ulHeader{
-    display: flex;
-    gap: 10px;
-    list-style: none;
 }
