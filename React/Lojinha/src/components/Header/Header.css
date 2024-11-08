@@ -9,14 +9,19 @@
 .divHeader{
     display: flex;
     align-items: center;
-    gap: 10px;
+    width: 100%;
 }
 
 .tituloHeader{
     color: #ffffff;
 }
 
-.lojinhaIconHeader{
-    height: auto;
+.inputHeader{
+    padding: 3px 8px;
+    width: auto;
     width: 50%;
+    margin-left: 20px;
+    border: none;
+    border-radius: 10px;
 }
+

@@ -1,8 +1,9 @@
 
 .ulNav{
     display: flex;
-    gap: 15px;
+    gap: 20px;
     list-style: none;
+    align-items: center;
 }
 
 .linkNav{
