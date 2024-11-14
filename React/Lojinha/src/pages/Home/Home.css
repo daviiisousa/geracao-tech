@@ -1,17 +1,31 @@
+.sectionDestaque{
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsDesatque{
+    display: flex;
+    gap: 20px;
+}
+
+.tituloDestaque{
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: var(--cor-primaria);
+}
+
 .sectionProdutos{
     display: flex;
     flex-direction: column;
-    margin: 10px 100px;
+    padding: 10px 100px;
+
 }
 
-.tituloProdutos{
-    font-size: 40px;
-    background-color: var(--cor-secundaria);
-    color: var(--cor-primaria);
-    padding: 5px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+.secaoTiposProdutos{
+    margin: 10px 0px;
 }
+
 
 .produtosCards {
     display: grid;
@@ -19,7 +33,7 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.hortifrutiTitulo{
+.secaoTitulo{
     text-align: center;
     font-size: 35px;
     color: var(--cor-destaque);

@@ -4,6 +4,8 @@ export const Card = ({
   imgProduto,
   tituloProduto,
   descricaoProduto,
+  icon,
+  tituloBtn,
   ...props
 }) => {
   return (
@@ -12,11 +14,12 @@ export const Card = ({
         <img
           className="imagenCardProduto"
           src={imgProduto}
-          alt={tituloProduto}
+          alt={imgProduto ? tituloProduto : ''} 
         />
+        {icon}
         <h1 className="tituloCardProduto">{tituloProduto}</h1>
         <p className="descriçaoProduto">{descricaoProduto}</p>
-        <BtnPrimary style={{ width: "100%" }}>Comprar</BtnPrimary>
+        <BtnPrimary style={{ width: "100%" }}>{tituloBtn}</BtnPrimary>
       </div>
     </>
   );

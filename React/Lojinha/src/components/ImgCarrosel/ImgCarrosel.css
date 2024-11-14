@@ -1,0 +1,12 @@
+.divCarrosel{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--cor-secundaria);
+    height: 100%;
+}
+
+.fotoCarrosel{
+    object-fit: cover;
+    height: 100%;
+}
