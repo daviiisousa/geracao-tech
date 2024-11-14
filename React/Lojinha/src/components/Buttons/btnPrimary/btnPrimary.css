@@ -1,0 +1,15 @@
+.btnPrimary{
+    background-color: var(--cor-primaria);
+    padding: 5px 8px;
+    border-radius: 8px;
+    border: none;
+    transition: 0.5s ease-in-out;
+    color: white;
+}
+
+.btnPrimary:hover{
+    cursor: pointer;
+    background-color: var(--cor-primaria-hover);
+    transition: 0.5s ease-in-out;
+    color: var(--cor-secundaria);
+}

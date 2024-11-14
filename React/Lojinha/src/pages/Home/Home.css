@@ -1,0 +1,31 @@
+.sectionProdutos{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 100px;
+}
+
+.tituloProdutos{
+    font-size: 40px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.produtosCards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.hortifrutiTitulo{
+    text-align: center;
+    font-size: 35px;
+    color: var(--cor-destaque);
+}
+
+.containerSeparador{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,5 @@
+.separador{
+    border: 2px solid var(--cor-destaque);
+    width: 50%;
+    margin: 20px 0px;
+}

@@ -8,8 +8,15 @@
 }
 
 :root{
+  --branco: #ffffff;
+  --cinza: #b6b3b3;
+
   --cor-primaria: #00712D;
+  --cor-primaria-hover: #015021;
+
   --cor-secundaria: #D5ED9F;
   --cor-leve: #FFFBE6;
+
   --cor-destaque: #FF9100;
+  --cor-destaque-hover: #bd6c02;
 }
