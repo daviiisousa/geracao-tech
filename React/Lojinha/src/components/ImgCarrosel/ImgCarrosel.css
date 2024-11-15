@@ -1,12 +1,23 @@
 .divCarrosel{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    justify-content: space-evenly;
-    background-color: var(--cor-secundaria);
+    background-image: url('../../assets/imgsCarrosel/fundoCarrosel.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 100%;
 }
 
 .fotoCarrosel{
     object-fit: cover;
+
     height: 100%;
+}
+
+.tituloCarrosel{
+    margin-left: 350px;
+    font-size: 50px;
+    width: 50%;
+    color: var(--branco);
 }
