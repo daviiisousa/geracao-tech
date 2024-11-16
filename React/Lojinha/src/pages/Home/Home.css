@@ -43,3 +43,10 @@
     display: flex;
     justify-content: center;
 }
+
+.navSeçao{
+    background-color: var(--cor-primaria);
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}

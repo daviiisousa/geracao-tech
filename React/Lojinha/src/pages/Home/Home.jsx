@@ -4,6 +4,7 @@ import { Carrosel } from "../../components/Carrosel/Carrosel";
 import { Header } from "../../components/Header/Header";
 import { Separador } from "../../components/Separador/Separador";
 import "./Home.css";
+import { Footer } from "../../components/Footer/Footer";
 
 export const Home = () => {
   const hortifruti = [
@@ -72,6 +73,11 @@ export const Home = () => {
     <body>
       <header>
         <Header />
+        <Separador style={{width: '100%'}} />
+        <div className="navSeçao">
+          <a className="linkNav" href="#hortifruti">Hortifruti</a>
+          <a className="linkNav" href="#Bebidas">Bebidas</a>
+        </div>
         <Carrosel />
       </header>
       <main>
@@ -110,9 +116,9 @@ export const Home = () => {
           </div>
         </section>
         <section className="sectionProdutos">
-          <section className="secaoTiposProdutos">
-            <h1 className="secaoTitulo">hortifruti</h1>
-            <div className="containerSeparador">
+          <section className="secaoTiposProdutos" id="hortifruti">
+            <h1 className="secaoTitulo">Hortifruti</h1>
+            <div className="containerSeparador" >
               <Separador />
             </div>
             <div className="produtosCards">
@@ -127,7 +133,7 @@ export const Home = () => {
               ))}
             </div>
           </section>
-          <section className="secaoTiposProdutos">
+          <section className="secaoTiposProdutos" id="Bebidas">
             <h1 className="secaoTitulo">Bebidas</h1>
             <div className="containerSeparador">
               <Separador />
@@ -146,7 +152,9 @@ export const Home = () => {
           </section>
         </section>
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </body>
   );
 };
