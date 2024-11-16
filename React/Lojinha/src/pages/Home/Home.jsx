@@ -3,8 +3,15 @@ import { Card } from "../../components/Card/Crad";
 import { Carrosel } from "../../components/Carrosel/Carrosel";
 import { Header } from "../../components/Header/Header";
 import { Separador } from "../../components/Separador/Separador";
-import "./Home.css";
 import { Footer } from "../../components/Footer/Footer";
+import { ImgCarrosel } from "../../components/ImgCarrosel/ImgCarrosel";
+import { SwiperSlide } from "swiper/react";
+
+import bananaFoto from '../../assets/imgsCarrosel/banana-lojinha.png'
+import abacaxiFoto from '../../assets/imgsCarrosel/abacaxi-lojinha.png'
+import cajuFoto from '../../assets/imgsCarrosel/caju-lojinha.png'
+
+import "./Home.css";
 
 export const Home = () => {
   const hortifruti = [
@@ -69,6 +76,24 @@ export const Home = () => {
     },
   ];
 
+  const fotoCarrosel = [
+    {
+      url: abacaxiFoto,
+      titulo: 'Selecionado para você',
+      alt: "Foto 1",
+    },
+    {
+      url: bananaFoto,
+      titulo: 'Promoçoes todos os dias',
+      alt: "Foto 2",
+    },
+    {
+      url: cajuFoto,
+      titulo: 'Qulidade em preço, atendimento, em FRUTA',
+      alt: "Foto 3",
+    }
+  ];
+
   return (
     <body>
       <header>
@@ -78,7 +103,15 @@ export const Home = () => {
           <a className="linkNav" href="#hortifruti">Hortifruti</a>
           <a className="linkNav" href="#Bebidas">Bebidas</a>
         </div>
-        <Carrosel />
+        <Carrosel>
+        {fotoCarrosel.map((foto, index) => (
+          <SwiperSlide  key={index}>
+            <div className="divImgCarrosel">              
+                <ImgCarrosel tituloCarrosel={foto.titulo} fotoCarrosel={foto.url} fotoAltCarrosel={foto.alt} />
+            </div>
+          </SwiperSlide>
+        ))}
+        </Carrosel>
       </header>
       <main>
         <section className="sectionDestaque">
